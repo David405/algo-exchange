@@ -10346,11 +10346,6 @@
   .sidebar .nav-item.active .nav-link {
     font-weight: 700;
   }
-  @media only screen and (min-width: 768px) {
-    .sidebar .nav-item.active .nav-link {
-      padding-left: 35px;
-    }
-  }
 
   .sidebar .nav-item .collapse {
     position: absolute;
@@ -10542,6 +10537,7 @@
       text-align: left;
       padding: 1rem;
       width: 14rem;
+      padding-left: 35px;
     }
     .sidebar .nav-item .nav-link i {
       font-size: 24px;
