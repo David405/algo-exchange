@@ -17,7 +17,6 @@ export default function Sidebar(params) {
           <div className="sidebar-brand-icon rotate-n-15">
           <i className="fas fa-funnel-dollar"></i>
           </div>
-          {/* INSERT LOGO */}
           <div className="sidebar-brand-text mx-3">
             <img src={logo} alt="AlgoExchange"  className="img-fluid"/>
           </div>

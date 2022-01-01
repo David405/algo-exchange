@@ -1,5 +1,4 @@
 import React from "react";
-// TODO use name exports for reusable components
 export  function SidebarMobileToggle (params) {
   return (
     <button

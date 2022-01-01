@@ -16,7 +16,7 @@ export function Layout(props) {
           </MainContent>
         </Wrapper>
 
-        {/*TODO possible name changes from Pagecontent to Main
+        {/*
         ALERT! Other components/ pages route  will stay inside the main
         ALERT! I am guessing logins and signup will have its on layout 
         */}

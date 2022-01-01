@@ -1,6 +1,6 @@
 import React from 'react'
 import { profile } from '../../../assets/images'
-// TODO there  can be a better naming for this - have to abstract this from the topbar for cleaner code
+// TODO there  can be a better naming for this -I have to abstract this from the topbar for cleaner code
 export default function UserInformation(params){
     return (
         <li className="nav-item dropdown no-arrow">
