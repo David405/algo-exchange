@@ -1,4 +1,5 @@
 import React from "react";
+import { logo } from "../../../assets/images";
 import './sidebar.css'
 export default function Sidebar(params) {
   return (
@@ -14,11 +15,11 @@ export default function Sidebar(params) {
           href="#"
         >
           <div className="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-funnel-dollar"></i>
+          <i className="fas fa-funnel-dollar"></i>
           </div>
           {/* INSERT LOGO */}
           <div className="sidebar-brand-text mx-3">
-            AlgoExchange
+            <img src={logo} alt="AlgoExchange"  className="img-fluid"/>
           </div>
         </a>
         {/* Nav Item - Dashboard */}
@@ -30,25 +31,25 @@ export default function Sidebar(params) {
         </li>
         <li className="nav-item ">
           <a className="nav-link" href="#">
-            <i class="fas fa-wallet"></i>
+            <i className="fas fa-wallet"></i>
             <span>Wallet</span>
           </a>
         </li>
         <li className="nav-item ">
           <a className="nav-link" href="#">
-          <i class="fas fa-exchange-alt"></i>
+          <i className="fas fa-exchange-alt"></i>
             <span>Trade</span>
           </a>
         </li>
         <li className="nav-item ">
           <a className="nav-link" href="#">
-          <i class="fas fa-server"></i>
+          <i className="fas fa-server"></i>
             <span>Transactions</span>
           </a>
         </li>
         <li className="nav-item ">
           <a className="nav-link" href="#">
-          <i class="fas fa-power-off"></i>
+          <i className="fas fa-power-off"></i>
             <span>Logout</span>
           </a>
         </li>

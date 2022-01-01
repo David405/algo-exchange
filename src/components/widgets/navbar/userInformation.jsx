@@ -1,4 +1,5 @@
 import React from 'react'
+import { profile } from '../../../assets/images'
 // TODO there  can be a better naming for this - have to abstract this from the topbar for cleaner code
 export default function UserInformation(params){
     return (
@@ -17,7 +18,7 @@ export default function UserInformation(params){
           </span>
           <img
             className="img-profile rounded-circle"
-            src="img/undraw_profile.svg"
+            src={profile}
           />
         </a>
         {/* Dropdown - User Information */}
