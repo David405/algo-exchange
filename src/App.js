@@ -1,5 +1,8 @@
+import React from "react";
+import { Layout } from "./components/layout/layout";
+
 const App = () => {
-  return <div className="App">Welcome to Algorand </div>;
+  return <Layout/>
 };
 
 export default App;
