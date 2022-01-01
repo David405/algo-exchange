@@ -2357,8 +2357,8 @@
   
   .btn-primary {
     color: #fff;
-    background-color: #4e73df;
-    border-color: #4e73df;
+    background-color: #00467A;
+    border-color: #00467A;
   }
   
   .btn-primary:hover {
@@ -2909,7 +2909,7 @@
   
   .btn-link {
     font-weight: 400;
-    color: #4e73df;
+    color: #00467A;
     text-decoration: none;
   }
   
@@ -9901,7 +9901,7 @@
   
   .bg-gradient-primary {
     background-color: #4e73df;
-    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    background-image: linear-gradient(180deg, #025695 10%, #00467A 100%);
     background-size: cover;
   }
   
@@ -10346,7 +10346,12 @@
   .sidebar .nav-item.active .nav-link {
     font-weight: 700;
   }
-  
+  @media only screen and (min-width: 768px) {
+    .sidebar .nav-item.active .nav-link {
+      padding-left: 35px;
+    }
+  }
+
   .sidebar .nav-item .collapse {
     position: absolute;
     left: calc(6.5rem + 1.5rem / 2);
@@ -10539,11 +10544,11 @@
       width: 14rem;
     }
     .sidebar .nav-item .nav-link i {
-      font-size: 0.85rem;
-      margin-right: 0.25rem;
+      font-size: 24px;
+      margin-right: 1rem;
     }
     .sidebar .nav-item .nav-link span {
-      font-size: 0.85rem;
+      font-size: 17px;
       display: inline;
     }
     .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
@@ -10625,6 +10630,15 @@
     }
   }
   
+  .navbar-nav.accordion.toggled > li.nav-item .nav-link i{
+    font-size: 0.85rem;
+    margin-right: 0.25rem;
+  }
+
+  .navbar-nav.accordion.toggled > li.nav-item .nav-link span{
+    font-size: 0.85rem;
+  }
+
   .sidebar-light .sidebar-brand {
     color: #6e707e;
   }
@@ -10710,8 +10724,10 @@
   }
   
   .sidebar-dark .nav-item.active .nav-link {
+    background: #003A65;
     color: #fff;
   }
+
   
   .sidebar-dark .nav-item.active .nav-link i {
     color: #fff;

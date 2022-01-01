@@ -1,0 +1,11 @@
+.flat-margin {
+  margin-left: -25px;
+  margin-right: -25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+    .flat-margin h1{
+        font-size: 48px;
+    }
+}
