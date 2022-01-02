@@ -1,23 +1,11 @@
-import React from 'react';
-import { Loader } from '../../../assets/icons';
-import btnStyles from './button.module.css';
+import React from 'react'
+import { Loader } from '../../../assets/icons'
+import btnStyles from './button.module.css'
 
-const Button = ({
-  label,
-  className,
-  type,
-  onClick,
-  loading,
-  disabled,
-  loadingText,
-}) => {
+const Button = ({ label, className, type, onClick, loading, disabled, loadingText }) => {
   return (
     <button
-      className={[
-        btnStyles.btn,
-        loading ? btnStyles.disabled : null,
-        `${className}`,
-      ].join(' ')}
+      className={[btnStyles.btn, loading ? btnStyles.disabled : null, `${className}`].join(' ')}
       type={type}
       onClick={onClick}
       disabled={loading || disabled}
@@ -35,9 +23,8 @@ const Button = ({
         )}
       </div>
     </button>
-  );
-};
+  )
+}
 
-export default Button;
-export { SidebarMobileToggle } from './sidebarMobileToggle';
-
+export default Button
+export { SidebarMobileToggle } from './sidebarMobileToggle'

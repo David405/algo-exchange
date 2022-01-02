@@ -35,4 +35,3 @@ const TradeInputType = () => {
 
 export * from './walletKey'
 export { Input }
-
