@@ -33,4 +33,6 @@ const TradeInputType = () => {
   return <div></div>
 }
 
+export * from './walletKey'
 export { Input }
+

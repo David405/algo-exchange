@@ -1,6 +1,6 @@
 import React from 'react';
-import btnStyles from './button.module.css';
 import { Loader } from '../../../assets/icons';
+import btnStyles from './button.module.css';
 
 const Button = ({
   label,
@@ -39,3 +39,5 @@ const Button = ({
 };
 
 export default Button;
+export { SidebarMobileToggle } from './sidebarMobileToggle';
+

@@ -1,1 +1,1 @@
-// This is the card component
+export * from './card'

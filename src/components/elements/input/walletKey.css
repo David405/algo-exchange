@@ -1,0 +1,25 @@
+.walletKey {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.walletKey .form-control {
+  border: none;
+  padding: 1.475rem 1.75rem;
+}
+.walletKey *.input-group-append {
+  margin-right: 2rem;
+}
+.walletKey *.input-group-text {
+  background: none;
+  border: none;
+  font-size: 13px;
+  line-height: 15px;
+  color: #0500ff;
+  text-decoration: underline;
+}
+.walletKey *.form-control:disabled,
+.form-control[readonly] {
+  background-color: #fff !important;
+}
