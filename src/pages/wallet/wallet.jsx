@@ -9,13 +9,9 @@ export function Wallet(params) {
         <Card title={"Balance"} components={<Balance  amount={'50Eth'}/>} />
         <Card title={"Private Key"} components={<WalletKey/>} />
         <Card title={"Public Key"} components={<WalletKey/>} />
-        {/* balance component */}
-        {/* private keys */}
-        {/* public keys */}
       </div>
       <div className="col-xl-5 col-lg-5">
-        <Card title={"Tran"} components={"yes"} />
-        {/* transaction table */}
+        <Card title={"Transactions"} components={"yes"} />
       </div>
     </div>
   );
