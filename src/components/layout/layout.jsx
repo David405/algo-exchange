@@ -1,4 +1,5 @@
 import React from "react";
+import { Wallet } from "../../pages/wallet";
 import "../../vendor/css/style.css";
 import { Navbar } from "../widgets/navbar";
 import Sidebar from "../widgets/sidebar/sidebar";
@@ -13,6 +14,7 @@ export function Layout(props) {
           <Navbar />
           <MainContent>
               {/* pages content */}
+              <Wallet/>
           </MainContent>
         </Wrapper>
 

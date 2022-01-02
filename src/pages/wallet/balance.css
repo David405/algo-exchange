@@ -1,0 +1,10 @@
+.balance-area {
+  padding: 50px 0px;
+  text-align: center;
+  padding: 50px 0;
+}
+.balance-area span {
+  font-size: 96px;
+  line-height: 112px;
+  color: #003a65;
+}
