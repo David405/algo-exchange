@@ -1,5 +1,5 @@
 .has-search .form-control {
-  padding-left: 2.375rem;
+  padding-left: 3rem;
 }
 .has-search .form-control-feedback {
   position: absolute;
@@ -10,9 +10,11 @@
   line-height: 2.375rem;
   text-align: center;
   pointer-events: none;
-  color: #aaa;
+  color: #e5e5e5;
+  padding-left: 22px;
 }
 .searchbar {
   width: 100% !important;
-  border-radius: 20px;
+  border-radius: 50px;
+  font-size: 24px !important;
 }
