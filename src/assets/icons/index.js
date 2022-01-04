@@ -1,4 +1,6 @@
 // folder for Icons
-import Loader from './loader.svg';
+import { ReactComponent as CaretDown } from './caret-down.svg'
+import { ReactComponent as CaretUp } from './caret-up.svg'
+import Loader from './loader.svg'
 
-export { Loader };
+export { CaretUp, Loader, CaretDown }
