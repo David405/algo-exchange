@@ -1,5 +1,5 @@
 import React from "react";
-import { Wallet } from "../../pages/wallet";
+import { Dashboard,Trade,Transactions,Wallet } from "../../pages";
 import "../../vendor/css/style.css";
 import { Navbar } from "../widgets/navbar";
 import Sidebar from "../widgets/sidebar/sidebar";
@@ -14,7 +14,7 @@ export function Layout(props) {
           <Navbar />
           <MainContent>
               {/* pages content */}
-              <Wallet/>
+              <Trade title='Trade'/>
           </MainContent>
         </Wrapper>
 

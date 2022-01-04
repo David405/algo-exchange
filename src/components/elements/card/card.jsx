@@ -1,6 +1,8 @@
 import React from "react";
 export function Card(props) {
-    let {title,components} = props;
+  // components ie: trade inputs components
+  // TITLE of the action  
+    let {title,components=defaultDiv()} = props;
   return (
     <div className="card shadow mb-4">
       <div className="card-header py-4">
@@ -12,3 +14,8 @@ export function Card(props) {
     </div>
   );
 }
+const defaultDiv = () => {
+  return (
+    <div className="chart-area"></div>
+  );
+};
