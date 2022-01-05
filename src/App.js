@@ -9,6 +9,7 @@ import TableRow from './components/elements/table/tr';
 import TableData from './components/elements/table/td';
 import axios from 'axios';
 import { useTable } from 'react-table';
+import api from './apis';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,17 @@ const App = () => {
     }
   };
 
+  const getFunds = async () => {
+    try {
+      const res = api.get(
+        '/transaction/LXEBXIBDAIF72NRI76SU252QSOGFCKEHTG7AI4P6W25V35PETU3Q'
+      );
+
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const _transactionObject =
     transactions.length > 0 ? Object.keys(transactions[0]) : [];
   const columns = useMemo(
@@ -48,6 +60,7 @@ const App = () => {
 
   useEffect(() => {
     getTransactions();
+    getFunds();
   }, []);
 
   return (
