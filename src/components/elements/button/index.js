@@ -1,11 +1,16 @@
-import React from 'react'
-import { Loader } from '../../../assets/icons'
-import btnStyles from './button.module.css'
+import React from "react";
+import { Loader } from "../../../assets/icons";
+import btnStyles from "./button.module.css";
 
-const Button = ({ label, className, type, onClick, loading, disabled, loadingText }) => {
+const Button = ({ label, className, type, onClick, loading, disabled, loadingText, buttonVariant = "primary" }) => {
   return (
     <button
-      className={[btnStyles.btn, loading ? btnStyles.disabled : null, `${className}`].join(' ')}
+      className={[
+        btnStyles.btn,
+        loading ? btnStyles.disabled : null,
+        `${className}`,
+        `${btnStyles[`btn_${buttonVariant.toLowerCase()}`]}`
+      ].join(" ")}
       type={type}
       onClick={onClick}
       disabled={loading || disabled}
@@ -23,9 +28,8 @@ const Button = ({ label, className, type, onClick, loading, disabled, loadingTex
         )}
       </div>
     </button>
-  )
-}
+  );
+};
 
-export default Button
-export { Button } from './kButton'
-export { SidebarMobileToggle } from './sidebarMobileToggle'
+export { SidebarMobileToggle } from "./sidebarMobileToggle";
+export { Button };
