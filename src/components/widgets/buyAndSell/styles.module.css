@@ -1,0 +1,19 @@
+/* Widget group styles */
+.widget_group {
+  width: calc(50% - 6.5px);
+  min-width: 200px;
+}
+
+.widget_group:first-of-type {
+  margin-right: 6.5px;
+}
+.widget_group:last-of-type {
+  margin-left: 6.5px;
+}
+
+@media screen and (max-width: 520px) {
+  .widget_group {
+    margin: 0px !important;
+    width: 100%;
+  }
+}
