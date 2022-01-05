@@ -1,28 +1,23 @@
 import React from "react";
-import { Dashboard,Trade,Transactions,Wallet } from "../../pages";
+import { BrowserRouter } from "react-router-dom";
+import MainRouter from "../../routes";
 import "../../vendor/css/style.css";
 import { Navbar } from "../widgets/navbar";
 import Sidebar from "../widgets/sidebar/sidebar";
-import { Wrapper,MainContent } from "./containers/";
+import { MainContent, Wrapper } from "./containers/";
 
-export function Layout(props) {
+export function Layout() {
   return (
-    <>
+    <BrowserRouter>
       <div id="wrapper">
         <Sidebar />
         <Wrapper>
-          <Navbar />
-          <MainContent>
-              {/* pages content */}
-              <Trade title='Trade'/>
+          <MainContent title="Main content">
+            <Navbar />
+            <MainRouter />
           </MainContent>
         </Wrapper>
-
-        {/*
-        ALERT! Other components/ pages route  will stay inside the main
-        ALERT! I am guessing logins and signup will have its on layout 
-        */}
       </div>
-    </>
+    </BrowserRouter>
   );
 }

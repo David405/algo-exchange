@@ -5,4 +5,4 @@ const App = () => {
   return <Layout/>
 };
 
-export default App;
+export default App
