@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@200;400;600;700;900&family=Poppins:wght@200;300;700&family=Raleway:wght@300;400;600&family=Roboto:wght@400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@200;400;600;700;900&family=Poppins:wght@200;300;700&family=Raleway:wght@300;400;600&family=Roboto:wght@400;900&display=swap");
 
 :root {
-  --primary: #00467a;
-  --secondary: #e54c67;
+  --primary: #00467a !important;
+  --secondary: #e54c67 !important;
   --dark: #333;
   --light: #ffffff;
   --light-grey: #f6f7f7;
   --border-light: #e5e5e5;
   --input-light-bg: #f5f5f5;
   --input-color: #787878;
-  --primary-font: 'Roboto', sans-serif;
+  --primary-font: "Roboto", sans-serif;
 }
 
 * {
@@ -20,4 +20,18 @@
 
 body {
   font-family: var(--primary-font);
+}
+
+/* Hide input type "number" spin buttons*/
+/* SRC: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
