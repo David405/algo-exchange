@@ -1,0 +1,9 @@
+.sideBarToggle{
+    position: relative;
+    top: 25%;
+}
+@media only screen and (min-width: 768px) {
+    .sidebar.toggled .nav-item .nav-link{
+        margin-left: 0;
+    }
+}
