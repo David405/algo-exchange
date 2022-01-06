@@ -12,7 +12,7 @@ export function Layout() {
       <div id="wrapper">
         <Sidebar />
         <Wrapper>
-          <MainContent title="Main content">
+          <MainContent title="Algo exchange">
             <Navbar />
             <MainRouter />
           </MainContent>
