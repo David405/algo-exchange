@@ -4,7 +4,7 @@ export function Balance(props) {
   let { balance = null } = props;
   return (
     <div className="balance-area">
-      <span className="mx-auto">{balance}</span>
+      <span className="mx-auto">{balance}Eth</span>
     </div>
   );
 }
