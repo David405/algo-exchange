@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "../../elements";
 import { WalletData } from "../../elements/input/walletData";
 export default function WalletGenerator(props) {
-    console.log(props);
     const {address,privateKey} = {address: props.wallet.address, privateKey: props.wallet.privateKey}
   return (
     <>

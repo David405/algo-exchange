@@ -16,6 +16,7 @@ export default function UserLedgerAcctCreator(props) {
       /> */}
 
       <Button
+        onClick={props.createUserLedger}
         label={"create ledger"}
         className="button_btn__31WCE button_btn_primary__YxAPp"
       />
