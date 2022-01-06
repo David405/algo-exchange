@@ -43,9 +43,10 @@ export function Dashboard(props) {
     
     $.ajax(settings).done(function (response) {
       console.log(response);
+      localStorage.setItem("customerId", JSON.stringify(response.customerId));
+      localStorage.setItem("id", JSON.stringify(response.id));
     });
   }
-  createUserLedger();
 
   return (
     <div className="row">

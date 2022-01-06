@@ -4,3 +4,5 @@ export const MNEMONIC = "artist alarm clerk obscure timber firm reopen provide a
 export const URL = "https://api-eu1.tatum.io/v3";
 export const PRIVATE_KEY = JSON.parse(localStorage.getItem("private key"));
 export const PUBLIC_KEY = JSON.parse(localStorage.getItem("address"));
+export const CUSTOMERID = JSON.parse(localStorage.getItem("customerId"));
+export const ID = JSON.parse(localStorage.getItem("id"));
