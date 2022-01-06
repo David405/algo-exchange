@@ -6,6 +6,7 @@ import { Card } from "../../components/elements/card";
 import { Button } from "../../components/elements";
 import "./dashboard.css";
 import WalletGenerator from "../../components/widgets/generateWallet";
+import UserLedgerAcctCreator from "../../components/widgets/userLedgerAcctCreator";
 
 export function Dashboard(props) {
   const INITIAL_STATE = {address: '', privateKey: '' };
@@ -69,11 +70,7 @@ export function Dashboard(props) {
             <Card
               title={"Create User Ledger Account"}
               components={
-                <Button
-                  onClick={createUserLedger}
-                  label={"create ledger"}
-                  className="generate-btn"
-                />
+                <UserLedgerAcctCreator  createUserLedger={createUserLedger}/>
               }
             />
           </div>
