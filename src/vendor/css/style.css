@@ -11763,3 +11763,14 @@ body.sidebar-toggled footer.sticky-footer {
   margin-bottom: 0;
  }
  
+/* Element | http://localhost:3000/ */
+
+.view-details {
+  width: 100%;
+  display: inherit;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #02416f;
+  color: #fff;
+}

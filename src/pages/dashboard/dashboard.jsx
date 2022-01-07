@@ -3,11 +3,12 @@ import $ from "jquery";
 
 import { API_KEY, MNEMONIC, URL, PRIVATE_KEY, PUBLIC_KEY } from "../../apis";
 import { Card } from "../../components/elements/card";
-import { Button } from "../../components/elements";
 import "./dashboard.css";
 import WalletGenerator from "../../components/widgets/generateWallet";
 import UserLedgerAcctCreator from "../../components/widgets/userLedgerAcctCreator";
 import { TradeView } from "../../components/widgets/tradeView";
+import { MiniTransactionWidget } from "../../components/widgets/transactions";
+
 
 export function Dashboard(props) {
   const INITIAL_STATE = {address: '', privateKey: '' };
@@ -84,7 +85,7 @@ export function Dashboard(props) {
         <Card />
       </div>
       <div className="col-xl-5 col-lg-5">
-        <Card />
+        <Card title="Transactions" components={<MiniTransactionWidget/>} />
       </div>
     </div>
   );

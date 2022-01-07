@@ -1,19 +1,15 @@
 import React from "react";
 import { Button } from "../../elements";
-// import { WalletData } from "../../elements/input/walletData";
+import { WalletData } from "../../elements/input/walletData";
 export default function UserLedgerAcctCreator(props) {
   return (
     <>
-      {/* <WalletData
-        name="walletAddress"
-        placeholder="click the generate wallet button"
-        value={address}
-      />
+    
       <WalletData
         name="walletSecretKey"
         placeholder="click the generate wallet button"
-        value={privateKey}
-      /> */}
+        value={'dsdsajgasbd8232'}
+      />
 
       <Button
         onClick={props.createUserLedger}

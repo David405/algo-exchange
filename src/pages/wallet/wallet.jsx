@@ -7,6 +7,7 @@ import { Card } from "../../components/elements/card";
 import { WalletKey } from "../../components/elements/input";
 import { Button } from "../../components/elements";
 import { Balance } from ".";
+import { MiniTransactionWidget } from "../../components/widgets/transactions";
 
 export function Wallet(params) {
   const [balance, setBalance] = useState(0);
@@ -63,7 +64,7 @@ export function Wallet(params) {
         />
       </div>
       <div className="col-xl-5 col-lg-5">
-        <Card title={"Transactions"} components={"yes"} />
+        <Card title="Transactions" components={<MiniTransactionWidget/>} />
       </div>
     </div>
   );
