@@ -7,6 +7,7 @@ import { Button } from "../../components/elements";
 import "./dashboard.css";
 import WalletGenerator from "../../components/widgets/generateWallet";
 import UserLedgerAcctCreator from "../../components/widgets/userLedgerAcctCreator";
+import { TradeView } from "../../components/widgets/tradeView";
 
 export function Dashboard(props) {
   const INITIAL_STATE = {address: '', privateKey: '' };
@@ -59,6 +60,9 @@ export function Dashboard(props) {
     <div className="row">
       <div className="col-xl-7 col-lg-7">
         <div className="row">
+        <div className="col-lg-12">
+        <Card title={"Trade Center"} components={<TradeView />} />
+        </div>
           <div className="col-lg-6">
             <Card
               title={"Generate Algorand Wallet"}
