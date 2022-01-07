@@ -31,7 +31,7 @@ export function Dashboard(props) {
     const settings = {
       "async": true,
       "crossDomain": true,
-      "url": `${URL}/ledger/account`,
+      "url": `/ledger/account`,
       "method": "POST",
       "headers": {
         "content-type": "application/json",

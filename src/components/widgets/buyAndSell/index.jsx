@@ -25,16 +25,16 @@ const BuyAndSellWidget = () => {
     });
   }
 
-  buyTrade();
-
-  
+  const sellTrade = () => {
+    
+  }
 
   return (
     <section className="d-flex flex-wrap justify-content-between">
       <aside className={`${styles.widget_group}`}>
         <TradeInput inputTag="Price" defaultValue="456009" />
         <TradeInput inputTag="Quantity" defaultValue="0" />
-        <Button label="Buy" buttonVariant="primary" type="button" loadingText="Processing" />
+        <Button label="Buy" onClick={buyTrade} buttonVariant="primary" type="button" loadingText="Processing" />
       </aside>
       <aside className={`${styles.widget_group}`}>
         <TradeInput inputTag="Price" defaultValue="456009" />

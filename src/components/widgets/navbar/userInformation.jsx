@@ -14,12 +14,8 @@ export default function UserInformation(params){
           aria-expanded="false"
         >
           <span className="mr-2 d-none d-lg-inline text-gray-600 small">
-            Elloit Kingsley
+            Alice
           </span>
-          <img
-            className="img-profile rounded-circle"
-            src={profile}
-          />
         </a>
         {/* Dropdown - User Information */}
         <div
