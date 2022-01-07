@@ -39,7 +39,7 @@ export function SmallTable(props) {
         </thead>
         <tbody className="buy">{resultForBuy}</tbody>
         <tbody>
-          <h2>45597.25</h2>
+          <td className="total">45597.25</td>
         </tbody>
         <tbody className="sell">{resultForSell}</tbody>
       </table>

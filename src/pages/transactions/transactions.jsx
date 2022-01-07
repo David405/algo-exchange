@@ -3,7 +3,6 @@ import $ from "jquery";
 
 import { API_KEY, MNEMONIC, URL, PRIVATE_KEY, PUBLIC_KEY } from "../../apis";
 import { Card } from "../../components/elements/card";
-import { FullTable } from "../../components/elements/table";
 import { OrderBook } from "../../components/widgets/orderBook";
 
 export function Transactions(params) {
@@ -32,7 +31,7 @@ export function Transactions(params) {
     <div className="row">
       <div className="col-xl-7 col-lg-7">
         <Card 
-        components = {<FullTable/>}
+        components = {<Transactions/>}
         // components={<Button  onClick={getTransactionHistory} label={"get transactions"} className="generate-btn"/>} 
         />
       </div>

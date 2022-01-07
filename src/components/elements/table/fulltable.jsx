@@ -2,6 +2,21 @@
 import React from "react";
 import "./fulltable.css";
 export function FullTable(props) {
+  let { transactions: transactionLists} = props;
+  var results  = null;
+  if (transactionLists.length > 0) {
+    results = transactionLists.map((value, key) => {
+      return (
+        <tr key={key}>
+          <td>{value.closingAmount}</td>
+          <td>{value.senderRewards}</td>
+          <td>{value.fee}</td>
+          <td>{value.sender}</td>
+          <td>{value.roundTime}</td>
+        </tr>
+      );
+    });
+  }
   return (
     <div className="table-responsive ">
       <table className="table table-borderless transaction">
@@ -15,13 +30,7 @@ export function FullTable(props) {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>8.55k USDC</td>
-            <td>2.28 ETH</td>
-            <td>2.28 ETH</td>
-            <td>0X2B9C...538e</td>
-            <td>1 minute ago</td>
-          </tr>
+          {results}
         </tbody>
       </table>
     </div>
