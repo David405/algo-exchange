@@ -11758,3 +11758,8 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+.card-header {
+  padding-bottom: 0 !important;
+  margin-bottom: 0;
+ }
+ 
