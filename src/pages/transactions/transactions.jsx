@@ -4,6 +4,7 @@ import $ from "jquery";
 import { API_KEY, MNEMONIC, URL, PRIVATE_KEY, PUBLIC_KEY } from "../../apis";
 import { Card } from "../../components/elements/card";
 import { OrderBook } from "../../components/widgets/orderBook";
+import { TransactionWidget } from "../../components/widgets/transactions";
 
 export function Transactions(params) {
   let from = "2022-01-03T20:44:39Z";
@@ -31,7 +32,7 @@ export function Transactions(params) {
     <div className="row">
       <div className="col-xl-7 col-lg-7">
         <Card 
-        components = {<Transactions/>}
+        components = {<TransactionWidget/>}
         // components={<Button  onClick={getTransactionHistory} label={"get transactions"} className="generate-btn"/>} 
         />
       </div>

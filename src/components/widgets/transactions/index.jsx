@@ -2,16 +2,17 @@ import React,{useEffect,useState} from 'react'
 import { transactionsData } from '../../../store/dummy_data';
 import { FullTable } from '../../elements/table';
 
-export function Transactions(props) {
+export function TransactionWidget(props) {
     const [transaction, settransaction] = useState([])
     useEffect(() => {
-        const updateOrderBook = () => {
+        const updateTransaction = () => {
             // run a cmd on table
             //check data changes from endpoint
             // RUN THE API HERE
-            settransaction(transactionsData.transactions)
+            let transactions =  transactionsData.transactions
+            settransaction(transactions)
         }
-        updateOrderBook()
+        updateTransaction()
     }, [transaction])
     return (
         <FullTable transaction={transaction}/>

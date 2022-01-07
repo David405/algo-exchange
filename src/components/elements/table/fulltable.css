@@ -17,9 +17,10 @@ table.transaction {
   padding-left: 2px;
   text-align: center;
 }
-tbody .total {
-  color: #16b979;
-  font-size: 40px;
+ td.total {
+  color: #16b979 !important;
+  font-size: 40px !important;
+  text-align: left;
 }
 tbody.buy tr td:first-child {
   color: red;

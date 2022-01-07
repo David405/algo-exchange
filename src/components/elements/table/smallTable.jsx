@@ -2,8 +2,11 @@
 import React from "react";
 import "./fulltable.css";
 export function SmallTable(props) {
-  let { sellTransactions: sellTransactionList,buyTransactions: buyTransactionList } = props;
-  var resultForSell  = null;
+  let {
+    sellTransactions: sellTransactionList,
+    buyTransactions: buyTransactionList
+  } = props;
+  var resultForSell = null;
   if (sellTransactionList.length > 0) {
     resultForSell = sellTransactionList.map((value, key) => {
       return (
@@ -39,7 +42,7 @@ export function SmallTable(props) {
         </thead>
         <tbody className="buy">{resultForBuy}</tbody>
         <tbody>
-          <td className="total">45597.25</td>
+          <tr><td className="total">45597.25</td></tr>
         </tbody>
         <tbody className="sell">{resultForSell}</tbody>
       </table>

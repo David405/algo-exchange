@@ -2,7 +2,9 @@
 import React from "react";
 import "./fulltable.css";
 export function FullTable(props) {
-  let { transactions: transactionLists} = props;
+  
+   let {transaction:transactionLists} = props
+  //  console.log(props);
   var results  = null;
   if (transactionLists.length > 0) {
     results = transactionLists.map((value, key) => {
