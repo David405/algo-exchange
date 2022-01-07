@@ -2,8 +2,9 @@ import React from "react";
 import $ from "jquery";
 
 import { API_KEY, MNEMONIC, URL, PRIVATE_KEY, PUBLIC_KEY } from "../../apis";
-import { Button } from "../../components/elements";
 import { Card } from "../../components/elements/card";
+import { OrderBook } from "../../components/widgets/orderBook";
+import { FullTransactionWidget } from "../../components/widgets/transactions";
 
 export function Transactions(params) {
   let from = "2022-01-03T20:44:39Z";
@@ -30,10 +31,13 @@ export function Transactions(params) {
   return (
     <div className="row">
       <div className="col-xl-7 col-lg-7">
-        <Card title="Transaction history" components={<Button  onClick={getTransactionHistory} label={"get transactions"} className="generate-btn"/>} />
+        <Card 
+        components = {<FullTransactionWidget/>}
+        // components={<Button  onClick={getTransactionHistory} label={"get transactions"} className="generate-btn"/>} 
+        />
       </div>
       <div className="col-xl-5 col-lg-5">
-        <Card />
+        <Card title="Order Book" components={<OrderBook/>}/>
       </div>
     </div>
   );
