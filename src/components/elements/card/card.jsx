@@ -3,7 +3,7 @@ export function Card(props) {
   // components ie: trade inputs components
   // TITLE of the action  
     let {title,components=defaultDiv()} = props;
-  let cardTitle = (title != undefined) ?  <div className="card-header py-4">
+  let cardTitle = (title !== undefined) ?  <div className="card-header py-4">
   <h6 className="m-0 text-primary"> {title}</h6>
 </div> : ''
   return (

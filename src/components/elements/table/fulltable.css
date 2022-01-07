@@ -1,4 +1,4 @@
-table.transaction{
+table.transaction {
   text-align: start;
 }
 .transaction thead tr > th {
@@ -15,7 +15,16 @@ table.transaction{
   color: #000000;
   padding: 3px;
   padding-left: 2px;
+  text-align: center;
 }
-.transaction tfoot tr th{
-  color: #16B979;
+tbody h2 {
+  color: #16b979;
+}
+tbody.buy tr td:first-child {
+  color: red;
+  text-align: left;
+}
+tbody.sell tr td:first-child {
+  color: #16b979;
+  text-align: left;
 }

@@ -2,9 +2,9 @@ import React from "react";
 import $ from "jquery";
 
 import { API_KEY, MNEMONIC, URL, PRIVATE_KEY, PUBLIC_KEY } from "../../apis";
-import { Button } from "../../components/elements";
 import { Card } from "../../components/elements/card";
-import { FullTable, SmallTable } from "../../components/elements/table";
+import { FullTable } from "../../components/elements/table";
+import { OrderBook } from "../../components/widgets/orderBook";
 
 export function Transactions(params) {
   let from = "2022-01-03T20:44:39Z";
@@ -37,7 +37,7 @@ export function Transactions(params) {
         />
       </div>
       <div className="col-xl-5 col-lg-5">
-        <Card title="Order Book" components={<SmallTable/>}/>
+        <Card title="Order Book" components={<OrderBook/>}/>
       </div>
     </div>
   );
