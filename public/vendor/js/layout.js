@@ -50,6 +50,10 @@ window.onload = (event) => {
       }, 1000, 'easeInOutExpo');
       e.preventDefault();
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    
 };
 
 

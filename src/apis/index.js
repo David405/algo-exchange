@@ -1,14 +1,9 @@
 // apis will go in here
-import axios from 'axios';
-
-const api = axios.create({
-  baseURL: 'https://api-eu1.tatum.io/v3/algorand',
-});
-
-api.defaults.headers.common['x-api-key'] =
-  '5d3477ff-0d4f-4a70-8554-634b9f3c0a4f';
-// "headers": {
-//     "x-api-key": "REPLACE_KEY_VALUE"
-//   }
-
-export default api;
+export const API_KEY = "e9d24e2f-fc6f-4d20-a0ba-addc4c18af53";
+export const MNEMONIC =
+  "artist alarm clerk obscure timber firm reopen provide ankle vicious exhibit waste math toilet believe puppy lucky coast post kind black suspect mule able market";
+export const URL = "https://api-eu1.tatum.io/v3";
+export const PRIVATE_KEY = JSON.parse(localStorage.getItem("private key"));
+export const PUBLIC_KEY = JSON.parse(localStorage.getItem("address"));
+export const CUSTOMERID = JSON.parse(localStorage.getItem("customerId"));
+export const ID = JSON.parse(localStorage.getItem("id"));

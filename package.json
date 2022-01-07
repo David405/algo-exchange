@@ -1,11 +1,15 @@
 {
   "name": "algo-exchange",
   "version": "0.1.0",
+  "proxy": "https://api-eu1.tatum.io/v3/",
+  "homepage": "http://localhost:3000/",
   "private": true,
   "dependencies": {
+    "@tatumio/tatum": "^1.30.7",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.24.0",
+    "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-form": "^4.0.1",
