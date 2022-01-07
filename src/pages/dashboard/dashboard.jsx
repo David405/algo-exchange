@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import $ from "jquery";
-
+import { Link } from "react-router-dom";
 import { API_KEY, MNEMONIC, URL, PRIVATE_KEY, PUBLIC_KEY } from "../../apis";
 import { Card } from "../../components/elements/card";
 import "./dashboard.css";
@@ -56,7 +56,10 @@ export function Dashboard(props) {
       localStorage.setItem("id", JSON.stringify(response.id));
     });
   }
-
+  const tradeButtons = <div>
+    <Link to="/trade" className="view-details">Buy</Link>
+    <Link to="/trade" className="view-details" style={{marginTop: '15px', background: '#E54C67'}}>Sell </Link>
+  </div>
   return (
     <div className="row">
       <div className="col-xl-7 col-lg-7">
@@ -81,8 +84,7 @@ export function Dashboard(props) {
             />
           </div>
         </div>
-        <Card />
-        <Card />
+        <Card components={tradeButtons} />
       </div>
       <div className="col-xl-5 col-lg-5">
         <Card title="Transactions" components={<MiniTransactionWidget/>} />
