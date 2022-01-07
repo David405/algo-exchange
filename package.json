@@ -1,8 +1,6 @@
 {
   "name": "algo-exchange",
   "version": "0.1.0",
-  "proxy": "https://api-eu1.tatum.io/v3/",
-  "homepage": "http://localhost:3000/",
   "private": true,
   "dependencies": {
     "@tatumio/tatum": "^1.30.7",
