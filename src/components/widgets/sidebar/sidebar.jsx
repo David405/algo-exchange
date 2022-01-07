@@ -50,14 +50,12 @@ export default function Sidebar() {
         className="sidebar-brand d-flex align-items-center justify-content-center"
         to="/"
       >
-        <span>
-          <div className="sidebar-brand-icon rotate-n-15">
-            <i className="fas fa-funnel-dollar"></i>
-          </div>
-          <div className="sidebar-brand-text mx-3">
-            <img src={logo} alt="AlgoExchange" className="img-fluid" />
-          </div>
-        </span>
+        <div className="sidebar-brand-icon rotate-n-15">
+          <i className="fas fa-funnel-dollar"></i>
+        </div>
+        <div className="sidebar-brand-text mx-3">
+          <img src={logo} alt="AlgoExchange" className="img-fluid" />
+        </div>
       </Link>
       {/* Nav Item - Dashboard */}
       {SidebarLinks.map(linkItem => {

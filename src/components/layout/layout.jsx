@@ -12,8 +12,8 @@ export function Layout() {
       <div id="wrapper">
         <Sidebar />
         <Wrapper>
+        <Navbar />
           <MainContent title="Algo exchange">
-            <Navbar />
             <MainRouter />
           </MainContent>
         </Wrapper>
