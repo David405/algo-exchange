@@ -65,7 +65,7 @@ export function Dashboard(props) {
       <div className="col-xl-7 col-lg-7">
         <div className="row">
         <div className="col-lg-12">
-        <Card title={"Trade Center"} components={<TradeView />} />
+        {/* <Card title={"Trade Center"} components={<TradeView />} /> */}
         </div>
           <div className="col-lg-6">
             <Card
@@ -84,7 +84,7 @@ export function Dashboard(props) {
             />
           </div>
         </div>
-        <Card components={tradeButtons} />
+        {/* <Card components={tradeButtons} /> */}
       </div>
       <div className="col-xl-5 col-lg-5">
         <Card title="Transactions" components={<MiniTransactionWidget/>} />
