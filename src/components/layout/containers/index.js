@@ -1,2 +1,2 @@
-export * from './mainContent'
-export * from './wrapper'
+export * from "./mainContent";
+export * from "./wrapper";

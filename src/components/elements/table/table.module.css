@@ -1,12 +1,17 @@
 .table {
   border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 td,
 th {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 12px 15px;
 }
 
 tr:nth-child(even) {
@@ -23,4 +28,5 @@ th {
   text-align: left;
   background-color: var(--primary);
   color: white;
+  text-transform: uppercase;
 }

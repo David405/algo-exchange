@@ -10985,7 +10985,7 @@ a:focus {
     margin-right: 1rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 25px;
+    font-size: .85rem;
     display: inline;
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
@@ -11773,4 +11773,11 @@ body.sidebar-toggled footer.sticky-footer {
   font-size: 24px;
   background-color: #02416f;
   color: #fff;
+  transition: all .5s ease;
+}
+
+.view-details:hover{
+  color: #fff;
+  text-decoration: none;
+  opacity: .7;
 }
