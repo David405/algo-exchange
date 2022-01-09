@@ -10985,7 +10985,7 @@ a:focus {
     margin-right: 1rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 25px;
+    font-size: .85rem;
     display: inline;
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
