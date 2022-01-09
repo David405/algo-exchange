@@ -6,7 +6,6 @@ import "./sidebar.css";
 export default function Sidebar() {
   // Location object
   const location = useLocation();
-
   // Sidebar links
   const SidebarLinks = useMemo(
     () => [
@@ -60,7 +59,7 @@ export default function Sidebar() {
         </span>
       </Link>
       {/* Nav Item - Dashboard */}
-      {SidebarLinks.map((linkItem) => {
+      {SidebarLinks.map(linkItem => {
         return (
           <li
             key={`${linkItem.fa_icon}`}
