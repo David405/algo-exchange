@@ -11773,4 +11773,11 @@ body.sidebar-toggled footer.sticky-footer {
   font-size: 24px;
   background-color: #02416f;
   color: #fff;
+  transition: all .5s ease;
+}
+
+.view-details:hover{
+  color: #fff;
+  text-decoration: none;
+  opacity: .7;
 }

@@ -35,3 +35,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+a:hover {
+  text-decoration: none;
+  color: var(--light);
+}
